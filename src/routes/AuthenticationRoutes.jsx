@@ -1,17 +1,25 @@
-import Login from "../auth/Login";
 import AuthLayout from "../auth/layout/AuthLayout";
-
+import SignIn from "../auth/SignIn";
+import SignUp from "../auth/SignUp";
 const AuthenticationRoutes = {
   path: '/',
   element: <AuthLayout />,
   children: [
     {
       path: 'login',
-      element: <Login />
+      element: <SignIn />
     },
     {
       path: 'auth/login',
-      element: <Login />
+      element: <SignIn />
+    },
+    {
+      path: 'signup',
+      element: <SignUp />
+    },
+    {
+      path: 'auth/signup',
+      element: <SignUp />
     },
   ]
 };
